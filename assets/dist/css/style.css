@@ -35,6 +35,26 @@ b, strong {
 	line-height: 2;
 }
 
+
+.title-focus {
+	position: relative;
+}
+
+.title-focus:after {
+    position: absolute;
+    content: attr(data-text);
+    top: 4px;
+    left: 4px;
+    margin-right: -4px;
+    background-image: radial-gradient(#FD6600 0%, #FD6600 60%, transparent 60%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+}
+
 .b-example-divider {
   height: 5rem;
   /*background-color: rgba(0, 0, 0, .1);
