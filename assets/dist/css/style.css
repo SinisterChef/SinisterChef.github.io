@@ -104,12 +104,22 @@ b, strong {
 		font-size: 3em;
 }
 
+.mosaic,
 .profile,
 .card {
+	background-image: url("../../../assets/img/triangle-mosaic.png");
+}
+
+.bottom-clip {
 	overflow: visible;
 	padding: 3rem 0 7rem 0; 
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 85%);
-	background-image: url("../../../assets/img/triangle-mosaic.png");
+}
+
+.top-clip {
+	overflow: visible;
+	padding-top: 5rem !important; 
+	clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
 }
 
 .mask {
