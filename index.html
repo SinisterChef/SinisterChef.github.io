@@ -118,15 +118,37 @@
     </div>
   </div>
 
-  <div class="bg-dark text-secondary px-4 py-5 text-center">
+  <div class="bg-dark text-secondary px-4 py-5">
     <div class="py-5">
-      <h1 class="display-5 fw-bold text-white">Get in Touch <i class="fa fa-hand-o-right" aria-hidden="true"></i></h1>
+      <h1 class="display-5 fw-bold text-white text-center">Get in Touch <i class="fa fa-hand-o-right" aria-hidden="true"></i></h1>
       <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-4">Put contact information here along with .pdf resume and shit</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <p class="fs-5 mb-4">Want to start a project? Need consulting? Want to talk about dough fermentation? Let me know!</p>
+          <form class="form-inline" id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqvpywj" method="post">
+            <fieldset id="fs-frm-inputs">
+              <div class="form-group m-3">
+              <label for="full-name">Name</label>
+              <input class="form-control" type="text" name="name" id="name" required="">
+              </div>
+              <div class="form-group m-3">
+              <label for="email-address">Email Address</label>
+              <input class="form-control" type="email" name="_replyto" id="email" required="">
+              </div>
+              <div class="form-group m-3">
+              <label for="telephone">Phone Number (Optional)</label>
+              <input class="form-control" type="telephone" name="telephone" id="telephone">
+              </div>
+              <div class="form-group m-3">
+              <label for="complaint">How can I help?</label>
+              <textarea class="form-control" rows="6" name="message" id="message" required=""></textarea>
+              </div>
+              <input type="hidden" name="_subject" id="email-subject" value="Portfolio Contact Submission">
+            </fieldset>
+            <input type="submit" value="Get in Touch!">
+        </form>
+        <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
           <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
