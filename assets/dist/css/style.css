@@ -28,6 +28,11 @@ b, strong {
 	font-weight: bold;
 }
 
+.email a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .hero-text {
 	font-size: 1.5em;
 }
@@ -35,7 +40,6 @@ b, strong {
 .lead {
 	line-height: 2;
 }
-
 
 .title-focus {
 	position: relative;
