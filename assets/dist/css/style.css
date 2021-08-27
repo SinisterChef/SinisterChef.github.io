@@ -135,6 +135,19 @@ b, strong {
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 85%);
 }
 
+ul.skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.skills>li {
+	    margin: 0 .5rem .5rem 0;
+    background: #f2f2f2;
+    padding: .3rem 1rem;
+    border-radius: .3rem
+}
+
 /*.profile:before {
 	content: '';
 	position: absolute;
