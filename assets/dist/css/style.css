@@ -157,6 +157,11 @@ ul.skills>li {
     border-radius: .3rem
 }
 
+ul.work-into-skills>li {
+	padding: .3em;
+	font-size: .85em;
+}
+
 /*WEBFORM*/
 button[type="submit"] {
 	width: calc(100% - 2em);
