@@ -20,7 +20,7 @@ img {
 	box-shadow: 0 0 5px #ccc;
 }
 
-h1, h2, h5, .hero-text > strong {
+h1, h2, h5, .hero-text > strong, nav a {
 	font-family: 'Lora', serif;
 	color: #444;
 }
@@ -161,6 +161,47 @@ ul.work-into-skills>li {
 	padding: .3em;
 	font-size: .85em;
 }
+
+/*NAV*/
+.main-navigation-list {
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	flex-direction: row;
+}
+
+.main-navigation-list li {
+	padding: 0 .5em;
+}
+
+.main-navigation-list li a {
+	color: #444;
+	position: relative;
+}
+
+.main-navigation-list li a:hover {
+	color: #000;
+}
+
+.main-navigation-list li a::after {
+    position: absolute;
+    top: calc(100% + .4rem);
+    right: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: .2rem;
+    background: #000;
+    opacity: 0;
+    -webkit-transition: .25s opacity ease-in-out;
+    transition: .25s opacity ease-in-out;
+}
+
+.main-navigation-list li a:hover::after {
+    opacity: 1;
+}
+
 
 /*WEBFORM*/
 button[type="submit"] {
