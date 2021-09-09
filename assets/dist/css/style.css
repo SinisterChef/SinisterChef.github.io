@@ -87,7 +87,7 @@ b, strong {
 	border-radius: 100%;
 	border: 13px solid #fff;
 	border-color: #fff;
-	/*box-shadow: 0px 0px 20px #aaa;*/
+	box-shadow: 0px 0px 5px #ccc;
 }
 
 .btn-primary {
@@ -165,6 +165,22 @@ ul.skills>li {
 ul.work-into-skills>li {
 	padding: .3em;
 	font-size: .85em;
+}
+
+.work-entry {
+	display: block;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: -webkit-filter .25s ease-in-out;
+    transition: -webkit-filter .25s ease-in-out;
+    transition: filter .25s ease-in-out;
+    transition: filter .25s ease-in-out, -webkit-filter .25s ease-in-out;
+    margin: 0
+}
+
+.work-entry:hover {
+	filter: grayscale(0%);
 }
 
 /*NAV*/
@@ -246,7 +262,7 @@ div.wsu.work-hero-background {
 }
 
 img.wsu-logo {
-	max-width: 70rem;
+	max-width: 58rem;
 }
 
 
