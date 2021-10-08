@@ -257,12 +257,20 @@ div.work-hero-background {
 }
 
 div.wsu.work-hero-background {
-	background-image: url(../../img/wsu/WrightState-VideoConference-CampusAerial_green.jpg);
+	background-image: url('../../img/wsu/WrightState-VideoConference-CampusAerial_green.jpg');
 	padding: 4rem;
 }
 
 img.wsu-logo {
 	max-width: 58rem;
+}
+
+div.fof.work-hero-background {
+	background-image: url('../../img/fof/fof-hero-image.jpg');;
+}
+
+img.fof-logo {
+	max-width: 46rem;
 }
 
 
