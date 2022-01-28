@@ -271,7 +271,8 @@ img.wsu-logo {
 }
 
 div.fof.work-hero-background {
-	background-image: url('../../img/fof/fof-hero-image.jpg');;
+	background-image: url('../../img/fof/fof-hero-image.jpg');
+  padding: 4rem;
 }
 
 img.fof-logo,
@@ -280,7 +281,8 @@ img.so-logo {
 }
 
 div.so.work-hero-background {
-  background-image: url('../../img/so/so-hero-image.jpg');;
+  background-image: url('../../img/so/so-hero-image.jpg');
+  padding: 4rem;
 }
 
 
