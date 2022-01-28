@@ -274,8 +274,13 @@ div.fof.work-hero-background {
 	background-image: url('../../img/fof/fof-hero-image.jpg');;
 }
 
-img.fof-logo {
+img.fof-logo,
+img.so-logo {
 	max-width: 46rem;
+}
+
+div.so.work-hero-background {
+  background-image: url('../../img/so/so-hero-image.jpg');;
 }
 
 
