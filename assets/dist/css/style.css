@@ -20,6 +20,11 @@ body {
 	box-shadow: 0 0 5px #ccc;
 }*/
 
+figcaption {
+  border-top: solid 5px #046A38;
+  font-style: italic; 
+}
+
 h1, h2, h5, .hero-text > strong, nav a {
 	font-family: 'Lora', serif;
 	color: #444;
