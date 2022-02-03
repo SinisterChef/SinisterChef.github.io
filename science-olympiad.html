@@ -44,23 +44,15 @@
         <h2 class="display-5 mb-4 text-center title-focus">Rockets and Arenas</h2>
         <p>Due to last minute changes Wright State became the host of the 2017 Science Olympiad, a world wide science competition. With a small team between Wright State and the Nutter Center arena production team we organized and hosted over 2000 students in just 5 weeks. I was tasked with creating the theme, digital displays, animations, lower thirds and presentations for the keynote.</p>
         <ul class="d-md-flex flex-wrap skills work-into-skills">
-            <li>CSS/HTML</li>
-            <li>Javascript</li>
-            <li>Google Analytics</li>
             <li>User Experience</li>
-            <li>UI Design</li>
-            <li>Responsive Design</li>
-            <li>Git</li>
-            <li>Salesforce</li>
-            <li>Marketing Cloud</li>
-            <li>Email Marketing</li>
-            <li>SEO</li>
             <li>Graphic Design</li>
+            <li>InDesign</li>
             <li>Photoshop</li>
             <li>Illustrator</li>
             <li>Photography & Video Editing</li>
-            <li>PHP</li>
-            <li>Drupal</li>
+            <li>Strategy</li>
+            <li>After Effects</li>
+            <li>Animation</li>
           </ul>
       </div>
     </div>
@@ -71,8 +63,8 @@
       </div>
       <div class="col-lg-9">
         <figure>
-          <img src="assets/img/placeholder.jpg" class="img-fluid rounded" alt="wright state homepage wireframe" width="100%" height="500" loading="lazy">
-          <figcaption>WSU Homepage wireframe to mockup to screen</figcaption>
+          <img src="assets/img/so/19046_0409.jpg" class="img-fluid rounded" alt="Students awaiting the start of Olympiad" width="100%" height="500" loading="lazy">
+          <figcaption>Students awaiting the start of 2017 Science Olympiad</figcaption>
         </figure>
       </div>
    </div>
@@ -81,12 +73,20 @@
       </div>
       <div class="col-lg-9">
         <figure>
-          <img src="assets/img/placeholder.jpg" class="img-fluid rounded" alt="wright state homepage wireframe" width="100%" height="500" loading="lazy">
-          <figcaption>Google Analytics, UX testing, Profiles - Maybe make in image representating these things</figcaption>
+          <img src="assets/img/so/19046_0258.jpg" class="img-fluid rounded" alt="wright state homepage wireframe" width="100%" height="500" loading="lazy">
+          <figcaption>Students walking to their seats after being introduced where they are from</figcaption>
         </figure>
       </div>
    </div>
+   <div class="row py-5">
+      <div class="col-lg-8 offset-lg-2">
+        <figure>
+        <div id="video"></div>
+        <figcaption>Opening event of the 2017 Science Olympiad. I created every title screen, digital display, lower third, animation, power point presentation featured.</figcaption>
+      </figure>
       </div>
+    </div>
+  </div>
   </div>
 
     <!-- Perelaxing image background> -->
@@ -145,6 +145,61 @@
     </nav>
   </footer>
 </main>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="application/javascript">
+      function loadVideo() {
+          console.info(`loadVideo called`);
+
+          (function loadYoutubeIFrameApiScript() {
+            const tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+
+            const firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            tag.onload = setupPlayer;
+          })();
+
+          let player = null;
+
+          function setupPlayer() {
+            window.YT.ready(function() {
+              player = new window.YT.Player("video", {
+                height: "500",
+                width: "100%",
+                videoId: "-r6fVpmrPWU",
+                events: {
+                  onReady: onPlayerReady,
+                  onStateChange: onPlayerStateChange
+                }
+              });
+            });
+          }
+
+          function onPlayerReady(event) {
+            event.target.playVideo();
+          }
+
+          function onPlayerStateChange(event) {
+            var videoStatuses = Object.entries(window.YT.PlayerState);
+            console.log(videoStatuses.find(status => status[1] === event.data)[0]);
+          }
+        }
+
+        if (document.readyState !== "loading") {
+          console.info(`document.readyState ==>`, document.readyState);
+          loadVideo();
+        } else {
+          document.addEventListener("DOMContentLoaded", function() {
+            console.info(`DOMContentLoaded ==>`, document.readyState);
+            loadVideo();
+          });
+        }
+    </script>
   </body>
 </html>
