@@ -350,3 +350,12 @@ background: linear-gradient(183deg, rgba(253,102,0,1) 82%, rgba(13,110,253,1) 82
 @media (min-width: 992px) {
   .rounded-lg-3 { border-radius: .3rem; }
 }
+
+@media (max-width: 991px) {
+
+    img.wsu-logo,
+    img.fof-logo,
+    img.so-logo {
+    max-width: 100%;
+  }
+}
