@@ -180,6 +180,8 @@
               player = new window.YT.Player("video", {
                 height: "500",
                 width: "100%",
+                autoplay: "0",
+                start: 1,
                 videoId: "-r6fVpmrPWU",
                 events: {
                   onReady: onPlayerReady,
@@ -188,9 +190,9 @@
               });
             });
           }
-
           function onPlayerReady(event) {
-            event.target.playVideo();
+            event.target.loadVideo();
+            event.target.seekTo(1, 0);
           }
 
           function onPlayerStateChange(event) {
