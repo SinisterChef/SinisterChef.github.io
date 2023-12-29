@@ -352,6 +352,8 @@ background: linear-gradient(183deg, rgba(253,102,0,1) 82%, rgba(13,110,253,1) 82
 }
 
 @media (max-width: 991px) {
+  
+    video { width: 100%; }
 
     img.wsu-logo,
     img.fof-logo,
