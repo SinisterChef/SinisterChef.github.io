@@ -73,12 +73,17 @@ h2.display-5 {
 	font-weight: 700;
 }
 
-h3, h4, h6, a, p, button {
+h3, h4, h6, a, button {
 	font-family: 'Merriweather', serif;
 }
 
 b, strong {
 	font-weight: bold;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
 }
 
 .email a {
