@@ -207,7 +207,7 @@ ul.skills {
 
 ul.skills>li {
 	margin: 0 .5rem .5rem 0;
-    background: #f2f2f2;
+    background: #e0e0e0;
     padding: .3rem 1rem;
     border-radius: .3rem
 }
@@ -328,6 +328,14 @@ img.so-logo {
 div.so.work-hero-background {
   background-image: url('../../img/so/so-hero-image.jpg');
   padding: 4rem;
+}
+
+div.slate.work-hero-background {
+  background-image: url('../../img/slate/blue.jpg');
+}
+
+img.slate-logo {
+  max-width: 28rem;
 }
 
 
