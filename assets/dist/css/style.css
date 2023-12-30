@@ -343,6 +343,10 @@ img.slate-logo {
   max-width: 28rem;
 }
 
+img.badge-logo {
+  max-width: 38rem;
+}
+
 
 /*.profile:before {
 	content: '';
