@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Merriweather:ital,wght@0,300;0,700;1,400;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Merriweather:ital,wght@0,300;0,700;1,400;1,900&https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*PERSONAL RESETS*/
 html, 
@@ -63,17 +62,21 @@ figcaption {
   font-style: italic; 
 }
 
-h1, h2, h5, .hero-text > strong, nav a {
+h1, h2, h5, nav a {
   z-index: 5;
 	font-family: 'Lora', serif;
 	color: #444;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2.display-5 {
 	font-weight: 700;
 }
 
-h3, h4, h6, p, a, button {
+h3, h4, h6, .hero-text, a, button {
 	font-family: 'Merriweather', serif;
 }
 
