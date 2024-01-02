@@ -68,7 +68,8 @@ h1, h2, h5, nav a {
 	color: #444;
 }
 
-p {
+p,
+figcaption {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -239,6 +240,20 @@ ul.work-into-skills>li {
 
 .work-entry:hover {
 	filter: grayscale(0%);
+}
+
+/*LIGHTBOX*/
+
+div.carousel-item.active div.ratio {
+  background-color: #fff !important;
+}
+
+p.lightbox-caption em {
+  text-shadow: 0 0 5px #000;
+}
+
+div.modal-content button {
+  background-color: rgba(0,0,0,.5) !important;
 }
 
 /*NAV*/
