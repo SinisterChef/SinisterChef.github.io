@@ -242,6 +242,10 @@ ul.work-into-skills>li {
 	filter: grayscale(0%);
 }
 
+.kb-shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+}
+
 /*LIGHTBOX*/
 
 div.carousel-item.active div.ratio {
