@@ -70,7 +70,7 @@
         </p>
         <br>
         <h3>Impact</h3>
-        <p>With an up to date badge repository available to all other designers and developers at Wright State the badges are now a main highlight in Wright State's Print, Landing Pages, Emails, Billboards and other Wright State promotional material.
+        <p>With my up-to-date badge repository available to all other designers and developers at Wright State, the badges are now a main highlight in Wright State's Emails, Billboards, Print, Landing Pages, and other Wright State promotional material.
         </p>
       </div>
       <div class="col-lg-8">
@@ -86,9 +86,9 @@
    <div class="row">
       <div class="col-lg-4">
         <h3>Processes</h3>
-        <p>Keeping track of the awards and making sure they are current and accurate is the largest hurdle when creating the badges. Things can get out of hand very quickly especially when you give these badges to a full team of developers and designers. Seeing an award on an academic homepage from five years ago is not a great user experience.</p>
+        <p>Keeping track of the award badges and making sure they are current and accurate is the largest hurdle when creating and maintaining the badges. Without a process, things can get out of hand very quickly especially when you give these badges to a full team of developers and designers. Seeing an award on an academic homepage from five years ago is not a great user experience.</p>
 
-<p>Since we didn't have a DAM to utilize, I had to figure out other means of organization. In Drupal, I created a custom taxonomy specific for this project. With this taxonomy I am able to track the file ID in Drupal for each badge. Developers and content creators can easily pull down a badge from an image repository driven by the taxonomy. When the creator pulls a badge from this image repository it creates an instance of the badge rather than a new unique image. When the time comes to update the badge to a new year and a new source award URL all I have to do is update the badge visually in Illustrator, save it and then edit the original file ID in Drupal with the new badge image and updated award URL. Drupal will then see the updates in the original file ID and take those changes and apply them to all instances of that file ID in its next cache clear or CRON run. This allows for much tighter and easier consistency in promotional accolades and a better user experience for everyone involved.  
+<p>Since we did not have a DAM to utilize, I had to figure out other means of organization. In Drupal, I created a custom taxonomy specific for this project. With this taxonomy I am able to track the file ID in Drupal for each badge. Developers and content creators can easily pull down a badge from an image repository driven by the taxonomy. When a creator pulls a badge from this image repository, Drupal creates an instance of the badge rather than a new unique image. Using the taxonomy I created, when it comes time to update the badge to a new year and a new source award URL, my lift is minimal. All I have to do is update the badge visually in Illustrator, save, and then edit the original file ID in Drupal with the new badge image and updated award URL. Drupal will see the updates in the original file ID then take those changes and apply them to all instances of that file ID in the next cache clear or CRON run. This entire process allows for much tighter and easier consistency in promotional accolades, ensures current and accurate badges to the end user, and is a simple tool for all internal designers and developers.
 </p>
       </div>
       <div class="col-lg-4">
@@ -218,6 +218,7 @@
 </main>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/dist/js/index.bundle.min.js"></script>
+    <!--<script src="assets/dist/js/main.js"></script>-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGENDLHTC0"></script>
 <script>
