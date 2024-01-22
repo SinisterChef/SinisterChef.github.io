@@ -89,6 +89,11 @@ b, strong {
 	font-weight: bold;
 }
 
+h2.large-cap {
+  display: inline;
+  letter-spacing: -.24rem;
+}
+
 .center {
   display: block;
   margin: 0 auto;
