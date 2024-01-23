@@ -99,9 +99,15 @@ b, strong {
   margin: 0 auto;
 }
 
+.cv a,
 .email a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.cv a i,
+.email a i {
+  margin-right: .2rem;
 }
 
 .hero-text {
@@ -578,9 +584,9 @@ background: linear-gradient(183deg, rgba(253,102,0,1) 82%, rgba(13,110,253,1) 82
 
 @media (max-width: 991px) {
 
-    .work-entry { filter: none; }
+  .work-entry { filter: none; }
     
-    video { width: 100%; }
+  video { width: 100%; }
 
   .top-clip {
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
