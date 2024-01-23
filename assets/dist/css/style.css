@@ -170,6 +170,8 @@ b, strong {
 	border-color: #FD6600;
 }
 
+.btn-primary:active,
+.btn-primary:focus,
 .btn-primary:hover {
     color: #fff;
     background-color: #d04402;
