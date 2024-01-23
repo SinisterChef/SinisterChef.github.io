@@ -551,13 +551,13 @@ img.badge-logo {
     -ms-flex-align: center;
     align-items: center;
     font-family: fontawesome;
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 .button-alt:hover::before {
     margin: 0 -.75rem 0 0;
     rotate: 45deg;
-    transition: rotate .25s ease-in-out,
-                margin .25s ease-in-out;
 }
 
 .button-alt.light {
