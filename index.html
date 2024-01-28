@@ -29,6 +29,7 @@
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/dist/css/style.css" rel="stylesheet">
 <link rel="icon" type="image/png" href="favicon-32x32.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGENDLHTC0"></script>
 <script>
@@ -37,6 +38,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CGENDLHTC0');
+  // document.documentElement.style.setProperty('--animate-duration', '.5s');
 </script>
 
   </head>
@@ -71,7 +73,7 @@
   </div> -->
   <span class="mask">
   <div class="mb-5 text-center profile bottom-clip">
-    <img class="d-block mx-auto mb-4 profile-picture" src="assets/img/IMG_2656_crop_v2.jpg" alt="Kyle, he is a UX and Front end guy I think he's pretty cool hire him" width="300" height="300">
+    <img class="d-block mx-auto mb-4 profile-picture animate__animated animate__fadeInDown animate__faster" src="assets/img/IMG_2656_crop_v2.jpg" alt="Kyle, he is a UX and Front end guy I think he's pretty cool hire him" width="300" height="300">
     <span class="d-flex justify-content-center">
       <h1 class="display-1 fw-bold title-focus" data-text="Kyle O'Brien">Kyle O'Brien</h1>
     </span>
@@ -104,7 +106,7 @@
     <span class="d-flex justify-content-center">
     <h2 class="display-5 mb-4 text-center title-focus" data-text="Work" id="work">Work</h2>
    </span>
-    <div class="row align-items-center py-5 g-0">
+    <div class="row align-items-center py-5 g-0 work-group animate__animated animate__slow">
       <div class="col-lg-4 work-entry">
         <a class="work" href="wright-state-university.html">
           <img src="assets/img/wsu/wsu-thumb.jpg" class="img-fluid" alt="wright state thumbnail" loading="lazy">
@@ -221,7 +223,14 @@
     </nav>
   </footer>
 </main>
-    <!-- <script src="https://use.fontawesome.com/5df315a0af.js"></script> -->
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      const element = document.querySelector('.work-group');
+      const observer = new IntersectionObserver(entries => {
+        element.classList.toggle( 'animate__fadeIn', entries[0].isIntersecting );
+      });
+
+      observer.observe( element );
+    </script>
   </body>
 </html>
