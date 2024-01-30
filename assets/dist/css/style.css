@@ -122,7 +122,7 @@ b, strong {
 	position: relative;
 }
 
-.title-focus:after {
+/*.title-focus:after {
     position: absolute;
     content: attr(data-text);
     top: 4px;
@@ -135,7 +135,7 @@ b, strong {
     z-index: -5;
     display: block;
     text-shadow: none;
-}
+}*/
 
 .wsu-title-focus.title-focus:after {
   top: 4px;
