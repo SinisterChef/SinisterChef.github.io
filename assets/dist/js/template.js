@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Load header
-    var headerPlaceholder = document.getElementById("nav-reserve");
-    var headerRequest = new XMLHttpRequest();
-    headerRequest.onload = function() {
-        if (headerRequest.status >= 200 && headerRequest.status < 300) {
-            headerPlaceholder.innerHTML = headerRequest.responseText;
-        }
-    };
-    headerRequest.open("GET", "./nav.html");
-    headerRequest.send();
+    // // Load header
+    // var headerPlaceholder = document.getElementById("nav-reserve");
+    // var headerRequest = new XMLHttpRequest();
+    // headerRequest.onload = function() {
+    //     if (headerRequest.status >= 200 && headerRequest.status < 300) {
+    //         headerPlaceholder.innerHTML = headerRequest.responseText;
+    //     }
+    // };
+    // headerRequest.open("GET", "./nav.html");
+    // headerRequest.send();
+
+    console.log('ass');
+    fetch('./nav.html')
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            document.getElementById("nav-reserve").innerHTML = data;
+        });
 
     // Load footer
     var footerPlaceholder = document.getElementById("footer-reserve");
