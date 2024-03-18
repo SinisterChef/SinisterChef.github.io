@@ -218,7 +218,7 @@ b, strong {
 .top-clip {
 	overflow: visible;
 	padding-top: 5rem !important; 
-	clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
 }
 
 .mask {
@@ -596,7 +596,7 @@ background: linear-gradient(183deg, rgba(253,102,0,1) 82%, rgba(13,110,253,1) 82
   video { width: 100%; }
 
   .top-clip {
-    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0% 100%);
   }
 
     img.wsu-logo,
